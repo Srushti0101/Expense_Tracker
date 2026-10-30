@@ -1,0 +1,9 @@
+INFO:waitress:Serving on http://127.0.0.1:15015
+Bad Request: /api/auth/password-reset/otp/confirm/
+WARNING:django.request:Bad Request: /api/auth/password-reset/otp/confirm/
+Bad Request: /api/auth/password-reset/otp/confirm/
+WARNING:django.request:Bad Request: /api/auth/password-reset/otp/confirm/
+Unauthorized: /api/auth/login/
+WARNING:django.request:Unauthorized: /api/auth/login/
+Unauthorized: /api/auth/login/
+WARNING:django.request:Unauthorized: /api/auth/login/

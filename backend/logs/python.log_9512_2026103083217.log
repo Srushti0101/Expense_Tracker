@@ -1,0 +1,31 @@
+INFO:waitress:Serving on http://127.0.0.1:27787
+ERROR:accounts.views:OTP email delivery failed.
+Traceback (most recent call last):
+  File "D:\Politeforce Softtech\expense-tracker\backend\accounts\views.py", line 262, in post
+    sent_count = send_mail(
+        'Your ExpenseFlow password reset code',
+    ...<5 lines>...
+        fail_silently=False,
+    )
+  File "D:\Politeforce Softtech\expense-tracker\.venv\Lib\site-packages\django\core\mail\__init__.py", line 92, in send_mail
+    return mail.send()
+           ~~~~~~~~~^^
+  File "D:\Politeforce Softtech\expense-tracker\.venv\Lib\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "D:\Politeforce Softtech\expense-tracker\.venv\Lib\site-packages\django\core\mail\backends\smtp.py", line 154, in send_messages
+    sent = self._send(message)
+  File "D:\Politeforce Softtech\expense-tracker\.venv\Lib\site-packages\django\core\mail\backends\smtp.py", line 173, in _send
+    self.connection.sendmail(
+    ~~~~~~~~~~~~~~~~~~~~~~~~^
+        from_email, recipients, message.as_bytes(linesep="\r\n")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jemit\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 911, in sendmail
+    raise SMTPDataError(code, resp)
+smtplib.SMTPDataError: (451, b'4.3.0 Mail server temporarily rejected message. For more information, go to\n4.3.0  https://support.google.com/a/answer/3221692 5a478bee46e88-36a4291e38fsm6218609eec.15 - gsmtp')
+Service Unavailable: /api/auth/password-reset/otp/
+ERROR:django.request:Service Unavailable: /api/auth/password-reset/otp/
+Unauthorized: /api/auth/me/
+WARNING:django.request:Unauthorized: /api/auth/me/

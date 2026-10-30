@@ -1,0 +1,15 @@
+INFO:waitress:Serving on http://127.0.0.1:31082
+Not Found: /
+WARNING:django.request:Not Found: /
+Not Found: /auth/login/
+WARNING:django.request:Not Found: /auth/login/
+Not Found: /
+WARNING:django.request:Not Found: /
+Not Found: /auth/login/
+WARNING:django.request:Not Found: /auth/login/
+Not Found: /auth/login/
+WARNING:django.request:Not Found: /auth/login/
+Not Found: /auth/register/
+WARNING:django.request:Not Found: /auth/register/
+Not Found: /auth/register/
+WARNING:django.request:Not Found: /auth/register/

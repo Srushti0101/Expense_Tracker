@@ -1,0 +1,11 @@
+INFO:waitress:Serving on http://127.0.0.1:20691
+Unauthorized: /api/auth/login/
+WARNING:django.request:Unauthorized: /api/auth/login/
+Unauthorized: /api/auth/login/
+WARNING:django.request:Unauthorized: /api/auth/login/
+Unauthorized: /api/auth/login/
+WARNING:django.request:Unauthorized: /api/auth/login/
+Unauthorized: /api/auth/login/
+WARNING:django.request:Unauthorized: /api/auth/login/
+Unauthorized: /api/auth/login/
+WARNING:django.request:Unauthorized: /api/auth/login/

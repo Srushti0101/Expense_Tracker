@@ -1,0 +1,5 @@
+INFO:waitress:Serving on http://127.0.0.1:18700
+Not Found: /
+WARNING:django.request:Not Found: /
+Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico

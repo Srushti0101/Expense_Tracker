@@ -1,0 +1,33 @@
+INFO:waitress:Serving on http://127.0.0.1:31898
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: Reset your ExpenseFlow password
+From: ExpenseFlow <noreply@example.com>
+To: srushtijasoliya7@gmail.com
+Date: Wed, 21 Oct 2026 07:29:22 -0000
+Message-ID: <179256776285.11820.18243400803583222693@srushti.bwrouter>
+
+Hello shena,
+
+Use this link to reset your ExpenseFlow password:
+http://localhost:8080/reset-password/?uid=MTI&token=dgsuqy-b154fdb9ecdaf71924e35ce79c64c766
+
+If you did not request a password reset, you can ignore this email.
+-------------------------------------------------------------------------------
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: Reset your ExpenseFlow password
+From: ExpenseFlow <noreply@example.com>
+To: srushtijasoliya7@gmail.com
+Date: Wed, 21 Oct 2026 07:29:22 -0000
+Message-ID: <179256776286.11820.1598186751847163629@srushti.bwrouter>
+
+Hello srushtijasoliya7@gmail.com,
+
+Use this link to reset your ExpenseFlow password:
+http://localhost:8080/reset-password/?uid=MTM&token=dgsuqy-f3b1566446746f7940bf808543abca96
+
+If you did not request a password reset, you can ignore this email.
+-------------------------------------------------------------------------------

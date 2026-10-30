@@ -1,0 +1,5 @@
+INFO:waitress:Serving on http://127.0.0.1:3710
+Bad Request: /api/auth/password-reset/
+WARNING:django.request:Bad Request: /api/auth/password-reset/
+Bad Request: /api/auth/password-reset/
+WARNING:django.request:Bad Request: /api/auth/password-reset/

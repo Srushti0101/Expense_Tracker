@@ -1,0 +1,7 @@
+INFO:waitress:Serving on http://127.0.0.1:28175
+Not Found: /auth/login/
+WARNING:django.request:Not Found: /auth/login/
+Not Found: /auth/login/
+WARNING:django.request:Not Found: /auth/login/
+Bad Request: /api/categories/
+WARNING:django.request:Bad Request: /api/categories/

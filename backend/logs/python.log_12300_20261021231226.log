@@ -1,0 +1,50 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\Politeforce Softtech\expense-tracker\.venv\Lib\site-packages\waitress\__main__.py", line 3, in <module>
+    run()  # pragma nocover
+    ~~~^^
+  File "D:\Politeforce Softtech\expense-tracker\.venv\Lib\site-packages\waitress\runner.py", line 235, in run
+    app = pkgutil.resolve_name(args[0])
+  File "C:\Users\jemit\AppData\Local\Programs\Python\Python313\Lib\pkgutil.py", line 505, in resolve_name
+    mod = importlib.import_module(gd['pkg'])
+  File "C:\Users\jemit\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1395, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1023, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\Politeforce Softtech\expense-tracker\backend\config\wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "D:\Politeforce Softtech\expense-tracker\.venv\Lib\site-packages\django\core\wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\Politeforce Softtech\expense-tracker\.venv\Lib\site-packages\django\__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Politeforce Softtech\expense-tracker\.venv\Lib\site-packages\django\conf\__init__.py", line 81, in __getattr__
+    self._setup(name)
+    ~~~~~~~~~~~^^^^^^
+  File "D:\Politeforce Softtech\expense-tracker\.venv\Lib\site-packages\django\conf\__init__.py", line 68, in _setup
+    self._wrapped = Settings(settings_module)
+                    ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Politeforce Softtech\expense-tracker\.venv\Lib\site-packages\django\conf\__init__.py", line 166, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "C:\Users\jemit\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1395, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1019, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1157, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1087, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\Politeforce Softtech\expense-tracker\backend\config\settings.py", line 56
+    'rest_framework', 'corsheaders', 'django_filters',
+    ^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax

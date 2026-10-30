@@ -1,0 +1,93 @@
+INFO:waitress:Serving on http://127.0.0.1:27949
+ERROR:accounts.views:Password reset email delivery failed.
+Traceback (most recent call last):
+  File "D:\Politeforce Softtech\expense-tracker\backend\accounts\views.py", line 106, in post
+    send_mail(
+    ~~~~~~~~~^
+        'Reset your ExpenseFlow password',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        fail_silently=False,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Politeforce Softtech\expense-tracker\.venv\Lib\site-packages\django\core\mail\__init__.py", line 92, in send_mail
+    return mail.send()
+           ~~~~~~~~~^^
+  File "D:\Politeforce Softtech\expense-tracker\.venv\Lib\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "D:\Politeforce Softtech\expense-tracker\.venv\Lib\site-packages\django\core\mail\backends\smtp.py", line 146, in send_messages
+    new_conn_created = self.open()
+  File "D:\Politeforce Softtech\expense-tracker\.venv\Lib\site-packages\django\core\mail\backends\smtp.py", line 101, in open
+    self._partial_connection.login(self.username, self.password)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jemit\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 753, in login
+    (code, resp) = self.auth(
+                   ~~~~~~~~~^
+        authmethod, getattr(self, method_name),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        initial_response_ok=initial_response_ok)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jemit\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 651, in auth
+    (code, resp) = self.docmd("AUTH", mechanism + " " + response)
+                   ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jemit\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 441, in docmd
+    return self.getreply()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\jemit\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 414, in getreply
+    raise SMTPServerDisconnected("Connection unexpectedly closed")
+smtplib.SMTPServerDisconnected: Connection unexpectedly closed
+Service Unavailable: /api/auth/password-reset/
+ERROR:django.request:Service Unavailable: /api/auth/password-reset/
+ERROR:accounts.views:Password reset email delivery failed.
+Traceback (most recent call last):
+  File "D:\Politeforce Softtech\expense-tracker\backend\accounts\views.py", line 106, in post
+    send_mail(
+    ~~~~~~~~~^
+        'Reset your ExpenseFlow password',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        fail_silently=False,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Politeforce Softtech\expense-tracker\.venv\Lib\site-packages\django\core\mail\__init__.py", line 92, in send_mail
+    return mail.send()
+           ~~~~~~~~~^^
+  File "D:\Politeforce Softtech\expense-tracker\.venv\Lib\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "D:\Politeforce Softtech\expense-tracker\.venv\Lib\site-packages\django\core\mail\backends\smtp.py", line 146, in send_messages
+    new_conn_created = self.open()
+  File "D:\Politeforce Softtech\expense-tracker\.venv\Lib\site-packages\django\core\mail\backends\smtp.py", line 101, in open
+    self._partial_connection.login(self.username, self.password)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jemit\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 753, in login
+    (code, resp) = self.auth(
+                   ~~~~~~~~~^
+        authmethod, getattr(self, method_name),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        initial_response_ok=initial_response_ok)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jemit\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 651, in auth
+    (code, resp) = self.docmd("AUTH", mechanism + " " + response)
+                   ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jemit\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 441, in docmd
+    return self.getreply()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\jemit\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 414, in getreply
+    raise SMTPServerDisconnected("Connection unexpectedly closed")
+smtplib.SMTPServerDisconnected: Connection unexpectedly closed
+Service Unavailable: /api/auth/password-reset/
+ERROR:django.request:Service Unavailable: /api/auth/password-reset/
+Not Found: /
+WARNING:django.request:Not Found: /
+Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+Not Found: /
+WARNING:django.request:Not Found: /
+Not Found: /
+WARNING:django.request:Not Found: /
+Unauthorized: /api/auth/me/
+WARNING:django.request:Unauthorized: /api/auth/me/

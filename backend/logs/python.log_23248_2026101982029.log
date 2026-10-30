@@ -1,0 +1,11 @@
+INFO:waitress:Serving on http://127.0.0.1:2060
+Not Found: /
+WARNING:django.request:Not Found: /
+Not Found: /
+WARNING:django.request:Not Found: /
+Method Not Allowed: /api/auth/register/
+WARNING:django.request:Method Not Allowed: /api/auth/register/
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING:django.request:Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING:django.request:Not Found: /.well-known/appspecific/com.chrome.devtools.json

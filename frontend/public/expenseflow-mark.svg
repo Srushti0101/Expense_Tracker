@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <defs>
+    <linearGradient id="expenseflow-mark-bg" x1="5" y1="4" x2="43" y2="45" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4B8BDD"/>
+      <stop offset=".52" stop-color="#2363B1"/>
+      <stop offset="1" stop-color="#123A7A"/>
+    </linearGradient>
+    <linearGradient id="expenseflow-mark-accent" x1="17" y1="16" x2="34" y2="34" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#48A3CA"/>
+      <stop offset="1" stop-color="#2377AD"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="15" fill="url(#expenseflow-mark-bg)"/>
+  <path d="M14 11.5h15.2L35 17.3v19.2H14v-25Z" fill="#fff"/>
+  <path d="M28.5 11.8v6h6" stroke="#A8C9F0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M18.5 22h12M18.5 26.5h7" stroke="#285A9B" stroke-width="2" stroke-linecap="round"/>
+  <path d="m26 32 2.5 2.5 5-5" stroke="url(#expenseflow-mark-accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
